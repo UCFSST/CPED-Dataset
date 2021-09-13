@@ -2,6 +2,17 @@
 Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 
 ## Traffic Data
+### Traffic/C2C_Traffic.csv
+
+| Field |	Label |	Description   |	Required |
+| ----- | ----- | ------------- | -------- |
+| createdDate | Record Timestamp |	Date and time when the data was uploaded | Always |
+| keySet | Roadway Identifier | A dictionary includes network id and link id | Always |
+| occupancy | Average Occupancy	| Percent of time a point on the road is occupied by vehicles (%) |  Always (Zero: Occupancy is zero because volume is zero) |
+| speed | Average Speed	| Average speed during last 1 minute (mph) | Always (Zero: Average speed is zero because volume is zero) |
+| travelTime | Averagt Travel Time | Average travel time among all travel lanes (second) | Always (Zero: Travel time is zero because volume is zero) |
+| volume | Total Volume | Number of vehicles counted within last 1 minute for the roadway link for all travel lanes | Always (Zero: Total volume is zero) |
+
 ### Traffic/Inventory.csv
 
 | Field |	Label |	Description   |	Required |
@@ -28,6 +39,26 @@ Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 
 
 ## Event Data
+### Event/C2C_Event.csv
+
+| Field |	Label |	Description   |	Required |
+| ----- | ----- | ------------- | -------- |
+| id | Record Identifier | Event identification number. Each event maintains the same id across all of its new, update, and delete entries | Always |
+| createdDate | Record Creation Timestamp | Entry creation timestamp | Always |
+| latitude | Latitude | Event location latitude | Always |
+| longitude	| Longitude | Event location longitude | Always |
+| roadCond | Road Condition | Road condition (dry/wet) | If-Applicable |
+| severity | Severity | Severity (major/minor) | If-Applicable |
+| source | Source | Reporting agency | If-Applicable |
+| startTimestamp | Event Start Timestamp | Event start timestamp | Always |
+| status | Status | Event status | If-Applicable |
+| type | Type | Event type | Always |
+| typeDesc | Type Description | Event type description | Always |
+| unconfirmedBlockages | Is Unconfirmed Road Blockage| Boolean field indicating unconfirmed road blockages | If-Applicable |
+| updateTimestamp	| Event Update Timestamp | Event update timestamp | Always |
+| updateType | Record Update Type | Record update type (new/update/delete) | Always |
+| weatherCond	| Weather Condition | Weather condition at time of event | If-Applicable |
+
 ### Event/Crash_Data.csv
 
 | Field |	Label |	Description   |	Required |

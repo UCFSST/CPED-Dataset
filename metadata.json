@@ -1,236 +1,287 @@
 {
     "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
-    "@id": "http://www.agency.gov/data.json",
+    "@id": "https://github.com/UCFSST/CPED-Dataset/blob/main/metadata.json",
     "@type": "dcat:Catalog",    
     "conformsTo": "https://project-open-data.cio.gov/v1.1/schema", 
     "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
     "dataset": [
         {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public", 
-            "accrualPeriodicity": "R/P1Y", 
-            "bureauCode": [
-                "018:10"
-            ],
-            "conformsTo": "http://www.agency.gov/widget-taxonomy/",
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "Jane Doe", 
-                "hasEmail": "mailto:jane.doe@agency.gov"
-            }, 
-            "describedBy": "http://www.agency.gov/datasets/widgets-dictionary.html", 
-            "dataQuality": true, 
-            "description": "This dataset provides national statistics on the production of widgets", 
-            "distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "description": "Widgets data as a CSV file", 
-                    "downloadURL": "https://data.agency.gov/datasets/widgets-statistics/widgets.csv", 
-                    "format": "CSV", 
-                    "mediaType": "text/csv", 
-                    "title": "widgets.csv"
-                }, 
-                {
-                    "@type": "dcat:Distribution",
-                    "description": "Widgets data as a zipped CSV file with attached data dictionary", 
-                    "downloadURL": "https://data.agency.gov/datasets/widgets-statistics/widgets-all.zip", 
-                    "format": "Zipped CSV", 
-                    "mediaType": "application/zip", 
-                    "title": "widgets-all.zip"
-                }, 
-                {
-                    "@type": "dcat:Distribution",
-                    "conformsTo": "http://www.agency.gov/widget-data-standard/", 
-                    "describedBy": "http://www.agency.gov/widgets/schema.json", 
-                    "describedByType": "application/schema+json", 
-                    "description": "Widget data as a JSON feed", 
-                    "downloadURL": "http://www.agency.gov/feeds/widgets-all.json", 
-                    "format": "JSON", 
-                    "mediaType": "application/json", 
-                    "title": "widgets-all.json"
-                }, 
-                {
-                    "@type": "dcat:Distribution",
-                    "accessURL": "https://data.agency.gov/api/widgets-statistics/", 
-                    "description": "A fully queryable REST API with JSON and XML output", 
-                    "format": "API", 
-                    "title": "Widgets REST API"
-                }
-            ], 
-            "identifier": "http://dx.doi.org/10.7927/H4PZ56R2", 
-            "issued": "2011-11-22", 
-            "keyword": [
-                "widget", 
-                "manufacturing", 
-                "factory"
-            ], 
-            "landingPage": "http://agency.gov/widgets/data", 
-            "language": [
-                "en-US"
-            ], 
-            "license": "http://creativecommons.org/publicdomain/zero/1.0/", 
-            "modified": "2011-11-19T12:00:00Z", 
-            "primaryITInvestmentUII": "021-006227212", 
-            "programCode": [
-                "018:001"
-            ], 
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "Widget Services", 
-                "subOrganizationOf": {
-                    "@type": "org:Organization",
-                    "name": "Office of Citizen Services and Innovative Technologies", 
-                    "subOrganizationOf": {
-                        "@type": "org:Organization",
-                        "name": "General Services Administration", 
-                        "subOrganizationOf": {
-                            "@type": "org:Organization",
-                            "name": "U.S. Government"
-                        }
-                    }
-                }
-            }, 
-            "references": [
-                "http://agency.gov/docs/widgets-1.html", 
-                "http://agency.gov/docs/widgets-2.html"
-            ], 
-            "rights": "This dataset has been given an international public domain dedication for worldwide reuse", 
-            "spatial": "United States", 
-            "systemOfRecords": "http://www.agency.gov/widgets/sorn/", 
-            "temporal": "2009-09-01T12:00:00Z/2010-05-31T12:00:00Z", 
-            "theme": [
-                "manufacturing"
-            ], 
-            "title": "U.S. Widget Manufacturing Statistics"
-        }, 
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides a sample of real-time C2C traffic data used for the CPED project.",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/Traffic/C2C_Traffic.csv",
+              "mediaType": "text/csv"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/Traffic/C2C_Traffic.csv",
+          "keyword": [
+            "traffic",
+            "real-time"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - Traffic - C2C Traffic Data"
+        },
         {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public", 
-            "accrualPeriodicity": "R/P1Y", 
-            "bureauCode": [
-                "018:10"
-            ], 
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "James Doe", 
-                "hasEmail": "mailto:james.doe@agency.gov"
-            }, 
-            "description": "This dataset provides ranges on widget phase modulation", 
-            "identifier": "http://dx.doi.org/10.7927/H4K64G12", 
-            "issued": "2011-11-22", 
-            "keyword": [
-                "widget", 
-                "modulation"
-            ], 
-            "landingPage": "http://agency.gov/widgets/data", 
-            "language": [
-                "en-US"
-            ], 
-            "license": "http://creativecommons.org/publicdomain/mark/1.0/", 
-            "modified": "2011-11-19T12:00:00Z", 
-            "primaryITInvestmentUII": "021-006227212", 
-            "programCode": [
-                "018:001"
-            ], 
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "Widget Modulation Program", 
-                "subOrganizationOf": {
-                    "@type": "org:Organization",
-                    "name": "Office of Citizen Services and Innovative Technologies", 
-                    "subOrganizationOf": {
-                        "@type": "org:Organization",
-                        "name": "General Services Administration", 
-                        "subOrganizationOf": {
-                            "@type": "org:Organization",
-                            "name": "U.S. Government"
-                        }
-                    }
-                }
-            }, 
-            "references": [
-                "http://agency.gov/docs/widgets-1.html", 
-                "http://agency.gov/docs/widgets-2.html"
-            ], 
-            "rights": "This dataset is a U.S. Government Work and is not covered by copyright in the United States of America", 
-            "spatial": "United States", 
-            "systemOfRecords": "http://www.agency.gov/widgets/sorn/", 
-            "temporal": "2009-09-01T12:00:00Z/2010-05-31T12:00:00Z", 
-            "theme": [
-                "manufacturing"
-            ], 
-            "title": "U.S. Widget Phase Modulation Ranges"
-        }, 
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides the locations of the MVDS detectors used to collect and detect the traffic parameters used in the CPED project.",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/Traffic/Inventory.csv",
+              "mediaType": "text/csv"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/Traffic/Inventory.csv",
+          "keyword": [
+            "traffic",
+            "MVDS",
+            "detector",
+            "GPS locations"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - Traffic - Inventory Data"
+        },
         {
-            "@type": "dcat:Dataset",
-            "accessLevel": "public", 
-            "accrualPeriodicity": "R/P1Y", 
-            "bureauCode": [
-                "018:10"
-            ], 
-            "contactPoint": {
-                "@type": "vcard:Contact",
-                "fn": "James Doe", 
-                "hasEmail": "mailto:james.doe@agency.gov"
-            }, 
-            "describedBy": "http://www.agency.gov/datasets/widget-modulation-dictionary.html", 
-            "dataQuality": true, 
-            "description": "This dataset provides ranges on widget phase modulators for 2011", 
-            "distribution": [
-                {
-                    "@type": "dcat:Distribution",
-                    "description": "Widget modulator data as a CSV file", 
-                    "downloadURL": "https://data.agency.gov/datasets/widgets-modulator-ranges.csv", 
-                    "format": "CSV", 
-                    "mediaType": "text/csv", 
-                    "title": "widgets.csv"
-                }
-            ], 
-            "identifier": "http://dx.doi.org/10.7927/H49P2ZKM", 
-            "isPartOf": "widget-modulators", 
-            "issued": "2011-11-22", 
-            "keyword": [
-                "widget", 
-                "modulation"
-            ], 
-            "landingPage": "http://agency.gov/widgets/data", 
-            "language": [
-                "en-US"
-            ], 
-            "license": "http://creativecommons.org/publicdomain/mark/1.0/", 
-            "modified": "2011-11-19T12:00:00Z", 
-            "primaryITInvestmentUII": "021-006227212", 
-            "programCode": [
-                "018:001"
-            ], 
-            "publisher": {
-                "@type": "org:Organization",
-                "name": "Widget Modulation Program", 
-                "subOrganizationOf": {
-                    "@type": "org:Organization",
-                    "name": "Office of Citizen Services and Innovative Technologies", 
-                    "subOrganizationOf": {
-                        "@type": "org:Organization",
-                        "name": "General Services Administration", 
-                        "subOrganizationOf": {
-                            "@type": "org:Organization",
-                            "name": "U.S. Government"
-                        }
-                    }
-                }
-            }, 
-            "references": [
-                "http://agency.gov/docs/widgets-1.html", 
-                "http://agency.gov/docs/widgets-2.html"
-            ], 
-            "rights": "This dataset is a U.S. Government Work and is not covered by copyright in the United States of America", 
-            "spatial": "United States", 
-            "systemOfRecords": "http://www.agency.gov/widgets/sorn/", 
-            "temporal": "2009-09-01T12:00:00Z/2010-05-31T12:00:00Z", 
-            "theme": [
-                "manufacturing"
-            ], 
-            "title": "U.S. Widget Phase Modulation Ranges for 2011"
-        }
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides MVDS detector traffic parameter readings used in the CPED project. Linked by ID to the Inventory.csv dataset.",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/Traffic/Zone_Readings.csv",
+              "mediaType": "text/csv"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/Traffic/Zone_Readings.csv",
+          "keyword": [
+            "traffic",
+            "MVDS",
+            "speed",
+            "volume",
+            "occupancy"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - Traffic - Zone Readings Data"
+        },
+        {
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides a sample of real-time C2C events data used for the CPED project.",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/Event/C2C_Events.csv.zip",
+              "mediaType": "applications/zip"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/Event/C2C_Events.csv.zip",
+          "keyword": [
+            "events",
+            "incidents",
+            "real-time"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - Events - C2C Event Data"
+        },
+        {
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides the crash data records used in the CPED project.",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/Event/Crash_Data.csv",
+              "mediaType": "applications/zip"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/Event/Crash_Data.csv",
+          "keyword": [
+            "crash",
+            "severity",
+            "GPS location"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - Events - Crash Data"
+        },
+        {
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides a list of the CCTVs managed by the Central Florida Expressway Authority (CFX) and used in the CPED project.",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/CCTV/CFX-Cameras.csv",
+              "mediaType": "text/csv"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/CCTV/CFX-Cameras.csv",
+          "keyword": [
+            "CCTV",
+            "GPS Location"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - CCTV - Central Florida Expressway Authority (CFX) CCTV Cameras"
+        },
+        {
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides a list of the CCTVs managed by the Florida Department of Transportation District 5 (FDOT D5) overlooking Interstate-4 and used in the CPED project.",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/CCTV/I-4-Cameras.csv",
+              "mediaType": "text/csv"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/CCTV/I-4-Cameras.csv",
+          "keyword": [
+            "CCTV",
+            "GPS Location"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - CCTV - Florida Department of Transportation District 5 (FDOT D5) CCTV Cameras"
+        },
+        {
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides a list of the CCTVs managed by the Florida Turnpike Authority and used in the CPED project.",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/CCTV/TPK-Cameras.csv",
+              "mediaType": "text/csv"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/CCTV/TPK-Cameras.csv",
+          "keyword": [
+            "CCTV",
+            "GPS Location"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - CCTV - Florida Turnpike Authority CCTV Cameras"
+        },
+        {
+          "accessLevel": "public",
+          "bureauCode": [
+            "021:04"
+          ],
+          "contactPoint": {
+            "fn": "Amr Abdelraouf",
+            "hasEmail": "mailto:amr.abdelraouf@knights.ucf.edu"
+          },
+          "description": "This dataset provides the list of freeway roadway segments in central Florida",
+          "distribution": [
+            {
+              "accessURL": "https://github.com/UCFSST/CPED-Dataset/blob/main/GIS/Florida.shp",
+              "mediaType": "application/x-shp"
+            }
+          ],
+          "identifier": "https://github.com/UCFSST/CPED-Dataset/blob/main/GIS/Florida.shp",
+          "keyword": [
+            "GIS",
+            "Florida",
+            "freeway"
+          ],
+          "modified": "2021-09-13T00:00:00Z",
+          "programCode": [
+            "021:000"
+          ],
+          "publisher": {
+            "name": "U.S. Department of Transportation",
+          },
+          "title": "CPED Dataset - GIS - Florida Freeway Shape File"
+        },
     ]
 }

@@ -1,8 +1,33 @@
 # CPED-Dataset
 Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 
-## Traffic Data
-### Traffic/C2C_Traffic.csv
+## Notes on Standards Used
+
+### Data Files
+The dataset utilizes open file formats and does not contain any proprietary formats. The following file formats are utilized in the dataset:
+
+- Traffic data, Event data, CCTV data:
+  * csv: Comma Separated Value
+- CCTV Snapshots:
+  * jpeg: Joint Photographic Experts Group
+- GIS data:
+  * cpg: code page specification
+  * dbf: attribute format
+  * prj: GIS project description
+  * sbn, sbx: spatial feature index
+  * shp: feature geometry
+  * shp.xml: geospatial metadata in extensible markup language (XML) format
+  * shx: shape index format
+
+Comma Separated Value (CSV) file format can be viewed or edited using any general text editor. However, csv files are best viewed using spreadsheet software, e.g., Microsoft Excel (https://www.microsoft.com/en-us/microsoft-365/excel). The GIS data can be viewed or edited using any commercial GIS software such as ArcGIS (https://www.arcgis.com) or QGIS (https://www.qgis.org).
+
+### Metadata
+The DCAT-US Schema v1.1 (Project Open Data Metadata Schema) (https://resources.data.gov/resources/dcat-us/) was used to create the dataset machine-readable metadata. Additionally, the JavaScript Object Notation (JSON) file format was used to create the metadata file.
+
+
+## Data Dictionary
+### Traffic Data
+#### Traffic/C2C_Traffic.csv
 
 | Field |	Label |	Description   |	Required |
 | ----- | ----- | ------------- | -------- |
@@ -13,7 +38,7 @@ Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 | travelTime | Averagt Travel Time | Average travel time among all travel lanes (second) | Always (Zero: Travel time is zero because volume is zero) |
 | volume | Total Volume | Number of vehicles counted within last 1 minute for the roadway link for all travel lanes | Always (Zero: Total volume is zero) |
 
-### Traffic/Inventory.csv
+#### Traffic/Inventory.csv
 
 | Field |	Label |	Description   |	Required |
 | ----- | ----- | ------------- | -------- |
@@ -26,7 +51,7 @@ Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 | longitude	| Longitude |	Longitude of detector location | Always |
 | interval	| Aggregation | Level	Aggregation level (seconds) |	Always |
 
-### Traffic/Zone_Readings.csv
+#### Traffic/Zone_Readings.csv
 
 | Field |	Label |	Description   |	Required |
 | ----- | ----- | ------------- | -------- |
@@ -38,8 +63,8 @@ Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 | quality |	Data Quality |	The quality of raw data (1: good)	| If-Applicable |
 
 
-## Event Data
-### Event/C2C_Event.csv
+### Event Data
+#### Event/C2C_Event.csv
 
 | Field |	Label |	Description   |	Required |
 | ----- | ----- | ------------- | -------- |
@@ -59,7 +84,7 @@ Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 | updateType | Record Update Type | Record update type (new/update/delete) | Always |
 | weatherCond	| Weather Condition | Weather condition at time of event | If-Applicable |
 
-### Event/Crash_Data.csv
+#### Event/Crash_Data.csv
 
 | Field |	Label |	Description   |	Required |
 | ----- | ----- | ------------- | -------- |
@@ -79,8 +104,8 @@ Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 | S4_Decimal_Degree_Latitude | Latitude of Crash | Location	Latitude of Crash Location	| Always (Zero or Null: Missing value) |
 
 
-## CCTV Data
-### CCTV/I-4-Cameras.csv, CCTV/CFX-Cameras.csv, CCTV/TPK-Cameras.csv
+### CCTV Data
+#### CCTV/I-4-Cameras.csv, CCTV/CFX-Cameras.csv, CCTV/TPK-Cameras.csv
 
 | Field |	Label |	Description   |	Required |
 | ----- | ----- | ------------- | -------- |
@@ -90,8 +115,8 @@ Dataset used for the Crash Prediction for Expedited Detection system (CPED)
 | Longitude |	Longitude	| Camera longitude value | Always |
 
 
-## GIS Data
-### Florida.shp
+### GIS Data
+#### Florida.shp
 
 | Field |	Label |	Description   |	Required |
 | ----- | ----- | ------------- | -------- |
